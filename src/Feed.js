@@ -1,5 +1,5 @@
 import React from "react";
-import { db, auth } from "./firebase";
+import { db } from "./firebase";
 import {
   collection,
   getDocs,
@@ -25,8 +25,6 @@ const Feed = () => {
   const [inputValue, setInputValue] = React.useState("");
   const postsCollection = collection(db, "posts");
   const user = useSelector(selectUser);
-
-  console.log(posts);
 
   const fetchPosts = async () => {
     const postsQuery = query(postsCollection, orderBy("timestamp", "desc"));

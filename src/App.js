@@ -14,21 +14,20 @@ function App() {
   const dispatch = useDispatch();
   React.useEffect(() => {
     auth.onAuthStateChanged((userAuth) => {
-      console.log(userAuth);
-      
-      if(userAuth){
-        dispatch(login({
-          email: userAuth.email,
-          uid: userAuth.uid,
-          displayName: userAuth.displayName,
-          photoUrl: userAuth.photoURL,
-        }));
-      }
-      else{
+      if (userAuth) {
+        dispatch(
+          login({
+            email: userAuth.email,
+            uid: userAuth.uid,
+            displayName: userAuth.displayName,
+            photoUrl: userAuth.photoURL,
+          })
+        );
+      } else {
         dispatch(logout());
       }
-    } );
-  },[]);
+    });
+  }, []);
   return (
     <div className="App">
       <Header />
