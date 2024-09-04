@@ -1,0 +1,55 @@
+.widgets {
+  flex: 0.2;
+  top: 95px;
+  position: sticky;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  height: fit-content;
+  padding-bottom: 10px;
+}
+
+.widgets_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.widgets_header > h2 {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.widgets_article{
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.widgets_article:hover{
+    background-color: whitesmoke;
+}
+
+.widgets_articleLeft{
+    color: #0177b7;
+    margin-top: 3px;
+    margin-right: 10px;
+}
+
+.widgets_icon{
+    font-size: 18px;
+}
+
+.widgets_articleRight{
+    flex: 1;
+}
+
+.widgets_articleRight>h4{
+    font-size: 16px;
+}
+.widgets_articleRight>p{
+    font-size: 14px;
+    color: gray;
+}

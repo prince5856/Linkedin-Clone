@@ -1,0 +1,27 @@
+.headerOptions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    color: gray;
+    cursor: pointer;
+}
+
+.headerOptions:hover{
+    color: black;
+}
+
+.headerOptions_title{
+    text-align: center;
+}
+
+.headerOptions_icon{
+    object-fit: contain;
+    height: 40px !important;
+    width: 40px !important;
+
+}
+
+.avatar_name{
+    text-align: center;
+}
